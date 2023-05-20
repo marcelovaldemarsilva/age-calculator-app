@@ -1,0 +1,185 @@
+body {
+  display: flex;
+  max-width: 1440px;
+  background-color: hsl(0, 0%, 94%);
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  justify-content: center;
+  
+}
+
+main {
+display: flex;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 750px;
+  flex-wrap: wrap;
+  height: auto;
+  border-radius: 20px 20px 200px 20px;
+  margin-top: 100px;
+  padding: 0 0 10px 0;
+}
+
+.conteudo-label-inputs{
+  padding: 7px;
+  display: flex;
+
+}
+
+
+.label-padrao {
+  display: block;
+  margin-bottom: 10px; 
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 4px;
+  margin: 0 25px 0 0;
+  padding: 5px
+
+}
+
+.label-erro {
+  color: red;
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  margin: 0 25px 0 0;
+
+}
+
+.dia-mes-ano {
+  font-size: 32px;
+  width: 125px;
+  border: solid 1px hsl(0, 0%, 94%);
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: 0 25px 0 0;
+  font-weight: 700;
+}
+
+.dia-mes-ano:hover {
+  border: solid 1px hsl(259, 100%, 65%);
+}
+
+.dia-mes-ano:active {
+  border: solid 1px hsl(0, 0%, 94%);
+}
+
+main .day,
+main .month,
+main .year {
+  color: red;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.input-erro {
+  border: solid 1px red;
+}
+
+
+span {
+  display: block;
+}
+
+
+.conteudo-botao {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.btn {
+  background-color: hsl(259, 100%, 65%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+  width: 100px;
+  height: 100px;
+
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+#linha-horizontal {
+  width: 600px;
+  border: solid 1px hsl(0, 0%, 94%);
+}
+
+
+
+.resultado span {
+  display: inline;
+}
+
+.resultado {
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 800;
+  padding: 5px;
+}
+
+.resultado .ano,
+.resultado .mes,
+.resultado .dias {
+  color: hsl(259, 100%, 65%);
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@media(max-width: 500px){
+body{
+  padding: 10px;
+}
+main{
+  width: 374px;
+    justify-content: center;
+
+
+}
+
+.dia-mes-ano {
+  font-size: 15px;
+  width: 60px;
+}
+.label-padrao{
+  font-size: 10px;
+
+}
+
+.btn {
+position: absolute;
+left: 180px;
+width: 50px;
+height: 50px;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.conteudo-botao{
+  margin-top: 40px;
+}
+img{
+  width: 25px;
+  height: 25px;
+}
+
+main .day,
+main .month,
+main .year {
+  font-size: 8px;
+}
+.resultado {   
+  font-size: 50px; 
+}
+.resultado div{
+  margin-bottom: 2px;
+}
+
+
+}

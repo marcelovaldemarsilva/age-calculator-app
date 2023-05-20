@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="reset.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="conteudo-label-inputs">
+  <div class="div-label-input">
+        <label for="dia" class="label-padrao" >DAY</label>
+        <input type="text" class="dia-mes-ano" name="dia" id="dia" placeholder="DD" maxlength="2" min="1">
+        <div class="day divResultadoErro"></div>
+      </div>
+
+     <div>
+        <label for="mes" class="label-padrao">MONTH</label>
+        <input type="text" class="dia-mes-ano" name="mes" id="mes" placeholder="MM" maxlength="2" min="1">
+        <div class="month divResultadoErro"></div>
+      </div>
+
+      <div>
+        <label for="ano" class="label-padrao">YEAR</label>
+        <input type="text" class="dia-mes-ano" name="ano" id="ano" placeholder="YYYY" maxlength="4">
+        <div class="year divResultadoErro"></div>
+       </div> 
+      </div>
+
+    <div class="conteudo-botao">
+      
+      <div id="linha-horizontal"></div>
+      <button class="btn"> <img src="./assets/images/icon-arrow.svg" alt="Botao calcular resultado de dia mes e ano"></button>
+    </div>
+    <div class="resultado">
+      <div><span class="ano">--</span> years</div>
+      <div><span class="mes">--</span> months</div>
+      <div><span class="dias">--</span> days </div>
+    </div>
+
+
+  </main>
+
+
+</body>
+
+</html>
